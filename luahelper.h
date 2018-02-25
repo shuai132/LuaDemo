@@ -13,7 +13,6 @@ public:
 
 private:
     lua_State* L = nullptr;
-    LuaHelper* lua;
 };
 
 #endif // LUAHELPER_H

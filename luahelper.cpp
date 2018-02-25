@@ -33,7 +33,7 @@ int LuaHelper::runMain(int argc, char *argv[])
     }
     status = lua_pcall(L, argc + 1, 1, 0);
     if (status == 0) {
-        int ret = lua_tointeger(L, -1);
+        auto ret = lua_tointeger(L, -1);
         cout<<"lua main function return value = "<<ret<<endl;
     } else {
         cout<<lua_tostring(L, -1)<<endl;
