@@ -12,9 +12,9 @@ add_subdirectory(${LUA_EXTENSION_SRC_DIR})
 add_definitions("-std=c++11 -Wall")
 
 add_executable(${PROJECT_NAME}
-    main.cpp
-    luahelper.cpp
-)
+        main.cpp
+        luahelper.cpp
+        )
 
 target_link_libraries(${PROJECT_NAME} lua)
 target_link_libraries(${PROJECT_NAME} luaextension)

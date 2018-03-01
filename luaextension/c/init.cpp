@@ -3,11 +3,11 @@
 #include "libs.h"
 
 static const luaL_Reg loadedlibs[] = {
-    {"tools",   luaopen_tools},
-    {nullptr, nullptr}
+        {"tools", luaopen_tools},
+        {nullptr, nullptr}
 };
 
-void openExtendLibs (lua_State *L) {
+void openExtendLibs(lua_State *L) {
     const luaL_Reg *lib;
     for (lib = loadedlibs; lib->func; lib++) {
         luaL_requiref(L, lib->name, lib->func, 1);

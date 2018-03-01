@@ -3,6 +3,6 @@
 
 #include "lua.hpp"
 
-void openExtendLibs (lua_State *L);
+void openExtendLibs(lua_State *L);
 
 #endif // INIT_H
