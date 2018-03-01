@@ -16,5 +16,5 @@ add_executable(${PROJECT_NAME}
         luahelper.cpp
         )
 
-target_link_libraries(${PROJECT_NAME} lua)
+target_link_libraries(${PROJECT_NAME} lualib)
 target_link_libraries(${PROJECT_NAME} luaextension)
